@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { Heading, Container, Text } from "@chakra-ui/react";
 import Button from "../components/Button";
-import Image from "../components/Image";
+import NasaPhoto from "../components/NasaPhoto";
 
 export default function Home() {
   const getDate = (separator = "/") => {
@@ -28,9 +28,7 @@ export default function Home() {
           NASA Photo of the Day
         </Heading>
         <Text>{getDate()}</Text>
-        <Heading as="h2">Title</Heading>
-        <Image />
-        <Text>Description</Text>
+        <NasaPhoto />
       </Container>
     </div>
   );
